@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="backgroundTheme">
+   <form (ngSubmit)=login(forma) #forma="ngForm">
+    <ion-img src="assets/icon/senal-de-parking.png"></ion-img>
+
+    <ion-item color="darkslateblue">
+      <ion-icon name="person"></ion-icon>
+      <ion-input type="Usuario" ngModel #user="ngModel" name="user" placeholder="Usuario:" minlength="4"></ion-input>
+    </ion-item>
+
+    <ion-item color ="darkslateblue">
+        <ion-icon name="key"></ion-icon>
+        <ion-input type="password" ngModel #password="ngModel" name="password" placeholder="Contraseña:" minlength="4"></ion-input>
+    </ion-item>
+    
+    <ion-button type="submit" expand="block" color ="primary">Ingresar</ion-button>
+    <p>--------------------------------- Ó ---------------------------------</p>
+    <ion-button type="submit"  expand="block" class="nose">Invitado</ion-button>
+    <ion-button type="submit" expand="default" class="koko">Registro</ion-button>
+  </form> 
+</div>
+</ion-content>

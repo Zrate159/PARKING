@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="backgroundTheme">
+
+      <ion-img  class="image"src="assets/icon/senal-de-parking.png"></ion-img>
+
+   <p>Tenga en cuenta que el administrador revisará su solicitud y dará aprobación dentro de las 24 horas siguientes al envío de los datos</p>
+   <form (ngSubmit)=login(forma) #forma="ngForm">
+
+
+    <ion-item class="hola">
+      <ion-label position="email"><ion-icon name="at"></ion-icon> Correo Electrónico: </ion-label>
+      <ion-input ngModel #user="ngModel" name="user" minlength="4"></ion-input>
+    </ion-item>
+
+    <ion-item class="hola">
+      <ion-label input type="user"><ion-icon name="person"></ion-icon> Usuario: </ion-label>
+      <ion-input type="user" ngModel #user="ngModel" name="user" minlength="4"></ion-input>
+  </ion-item>
+
+    <ion-item class = "hola"> 
+        <ion-label input type="password"><ion-icon name="key"></ion-icon> Contraseña: </ion-label>
+        <ion-input type="password" ngModel #password="ngModel" name="password" minlength="4"></ion-input>
+    </ion-item>
+
+    <ion-item class = "hola">
+      <ion-label input type="password"><ion-icon name="key"></ion-icon> Repetir contraseña: </ion-label>
+      <ion-input type="password" ngModel #password="ngModel" name="password" minlength="4"></ion-input>
+  </ion-item>
+
+    <ion-button type="submit" expand="block">Registrarse</ion-button>
+   
+  </form> 
+
+  </div>
+  
+</ion-content>
